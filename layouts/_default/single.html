@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="container">
+  <h1 class="title">{{ .Title }}
+    <br>
+    <span class="subtitle">{{ .Params.Subtitle }}</span>
+  </h1>
+  <ul class="tags">
+    {{ range .Params.tags }}
+    <li><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a> </li>
+    {{ end }}
+  </ul>
+  {{ .Content }}
+</div>
+{{ end }}
