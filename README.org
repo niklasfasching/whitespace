@@ -1,2 +1,3 @@
 * whitespace
 a bare minimum theme for hugo
+[[https://raw.githubusercontent.com/niklasfasching/whitespace/master/screenshot.png]]
